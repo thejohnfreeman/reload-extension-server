@@ -1,0 +1,22 @@
+{
+  "name": "reload-extension-server",
+  "version": "0.1.0",
+  "description": "'A server to communicate with reload extensions.'",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup --config telnet.config.js && rollup --config server.config.js",
+    "test": "standard --verbose | snazzy"
+  },
+  "author": "John Freeman <jfreeman08@gmail.com> (http://thejohnfreeman.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.13.0",
+    "ws": "^4.0.0"
+  },
+  "devDependencies": {
+    "rollup": "^0.55.1",
+    "rollup-plugin-json": "^2.3.0",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.3"
+  }
+}
